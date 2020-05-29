@@ -215,7 +215,7 @@ def message_cb_code(bot, event):
         title = html.select('.name')
         code = html.select('.clipboardjs-workaround')
         bot.send_text(chat_id=event.from_chat, 
-            #Да я знаю что это глупо, но лень было придумывать грамотный цикл)))
+            #todo
                 text= "Предложения по доставке еды.\n"+
                       "Организация: "+title[0].get_text(strip = True)+" -" + "промокод: "+ code[0].get_text(strip = True)+'\n'+
                       "Организация: "+title[1].get_text(strip = True)+" -" + "промокод: "+ code[1].get_text(strip = True)+'\n'+
